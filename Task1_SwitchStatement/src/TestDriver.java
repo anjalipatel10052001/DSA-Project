@@ -315,7 +315,6 @@ public class TestDriver {
 
             case 6:
 
-                // This test driver is from ChatGPT.
                 // This tests the task scenario if the user choose task 6.
                 // The following statements create an instance of the class and then
                 // activates a method after a user types their string and
