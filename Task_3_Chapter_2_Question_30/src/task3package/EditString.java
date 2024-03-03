@@ -26,8 +26,7 @@ import java.lang.String;
 import java.lang.System;
 
 // This is the Edit String class, a class for the user
-// to interact with. I used ChatGPT to do deep analysis to make
-// sure everything is up to standard.
+// to interact with. 
 
 public class EditString {
 
@@ -55,7 +54,7 @@ public class EditString {
         String stringToEdit;
 
         // This is a string to determine if the user wants to
-        // do commands. ChatGPT recommended to me to put an empty string.
+        // do commands. 
 
         String continueCommand = "";
 
@@ -68,7 +67,6 @@ public class EditString {
         final int defaultSize = 100;
 
         // This is a stack that saves previous versions of the characterStack.
-        // I got this idea from ChatGPT.
 
         ArrayBoundedStack<StackInterface<Character>> undoStack;
 
@@ -90,9 +88,6 @@ public class EditString {
         // This statement receives the choice of the size.
 
         int numberChoiceForSize = scnr.nextInt();
-
-        // This newline character consumer was recommended to me
-        // by ChatGPT.
 
         scnr.nextLine();
 
@@ -145,10 +140,6 @@ public class EditString {
         System.out.println();
 
         // This pushes the string value into the characterStack as characters.
-        // I used ChatGPT to give me advice on how to change
-        // the string into an array. My source for the solution
-        // to change the string into an array is ChatGPT. I did not
-        // use code from it. I only requested advice or asked questions.
 
         char[] stringToArray = stringToEdit.toCharArray();
 
@@ -160,7 +151,6 @@ public class EditString {
         }
 
         // This is the undoStack, a stack used for the undo command.
-        // ChatGPT helped me with this.
 
         undoStack.push(deepCopyStack(characterStack));
 
@@ -178,9 +168,6 @@ public class EditString {
 
         // If the user does not want any changes made, the string will be
         // printed.
-
-        // ChatGPT recommended to me to use this while statement
-        // for if the continueCommand equals "Yes".
 
 
         if (continueCommand.equals("X")) {
@@ -226,16 +213,9 @@ public class EditString {
 
                 // This is called uppercaseHoldover because it
                 // holds an uppercase version of the stack.
-                // ChatGPT gave me the idea to initialize
-                // a character array for this purpose.
 
                 char[] uppercaseHoldover = new char[sizeCharStack];
 
-                // I used ChatGPT to help me make all the
-                // characters in the character stack uppercase.
-                // I cite ChatGPT with the help of changing
-                // the characters in the stack to uppercase.
-                // It suggested to me to use pop and push.
 
                 for (int i = sizeCharStack - 1; i >= 0; i--) {
 
@@ -246,7 +226,6 @@ public class EditString {
                 }
 
                 // This returns the uppercase characters to the character stack.
-                //I got this idea from ChatGPT as well.
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -280,12 +259,10 @@ public class EditString {
                 int sizeCharStack = characterStack.size();
 
                 // This array holds a lowercase version of the character stack.
-                // As before, ChatGPT helped me with this character array as well.
 
                 char[] lowercaseHoldover = new char[sizeCharStack];
 
                 // This is a creation of the lowercaseHoldover array.
-                // ChatGPT helped me here.
 
                 for (int i = sizeCharStack - 1; i >= 0; i--) {
 
@@ -296,7 +273,6 @@ public class EditString {
                 }
 
                 // This makes the character stack lowercase.
-                // ChatGPT also helped me here.
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -329,12 +305,10 @@ public class EditString {
                 int sizeCharStack = characterStack.size();
 
                 // This creates a reverse character array.
-                // ChatGPT helped me here as well.
 
                 char[] reverseCharArray = new char[sizeCharStack];
 
                 // This fills up the reverse array.
-                // ChatGPT helped me here too.
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -346,7 +320,6 @@ public class EditString {
                 }
 
                 // This refills the character stack reversed.
-                // ChatGPT helped me here as well.
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -375,8 +348,7 @@ public class EditString {
             } else if (commandChoice.equals("C")) {
 
                 // This prompts the user to give the inputs so the
-                // replacement code can work. ChatGPT helped me
-                // with the replacement code.
+                // replacement code can work. 
 
                 System.out.print("Please first type the character you\n" +
                         "want to replace, and then type the character\n" +
@@ -394,7 +366,6 @@ public class EditString {
                 int sizeCharStack = characterStack.size();
 
                 // The character array is to help with the replacement code.
-                // ChatGPT gave me the idea for the character array.
 
                 char[] replaceAllHoldover = new char[sizeCharStack];
 
@@ -407,10 +378,7 @@ public class EditString {
                 }
 
                 // Since you cannot use the replaceAll method
-                // on characters, I used ChatGPT to help me with
-                // replacing the individual characters. ChatGPT
-                // provided me with code to create a function
-                // to replace characters here.
+                // on characters, replaced the individual characters. 
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -421,7 +389,6 @@ public class EditString {
                     }
                 }
 
-                // ChatGPT helped me refill the character stack.
 
                 for (int i = 0; i < sizeCharStack; i++) {
 
@@ -452,7 +419,6 @@ public class EditString {
     }
 
     // This is an undo function that reverts the current stack to a previous stack.
-    // ChatGPT recommended this to me.
 
 
     private static ArrayBoundedStack<Character> undo(ArrayBoundedStack<Character> characterStack,
@@ -543,10 +509,6 @@ public class EditString {
 
         private static void printString(StackInterface<Character> characterStack) {
 
-            // ChatGPT helped me construct this print block.
-
-            // ChatGPT suggested to me to use the StringBuilder.
-
             System.out.print("Your final output is: ");
 
             // Create a StringBuilder to build the string representation of the characterStack.
@@ -596,7 +558,6 @@ public class EditString {
 
     // This is to copy stacks and provide a snapshot of the user-defined stack.
     // This is so the user can go to a previously defined version of the stack.
-    // I used ChatGPT to help me with this deepCopyStack method.
 
     static StackInterface<Character> deepCopyStack(StackInterface<Character> original) {
 
