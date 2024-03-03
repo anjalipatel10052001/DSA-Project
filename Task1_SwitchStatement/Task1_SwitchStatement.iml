@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Task_3_Chapter_2_Question_30" />
+    <orderEntry type="module" module-name="Task4_Recursion" />
+    <orderEntry type="module" module-name="Task_5_Chapter_4_Question_22" />
+    <orderEntry type="module" module-name="Task6_Collections" />
+    <orderEntry type="module" module-name="Task_7_Chapter_6_Question_4" />
+    <orderEntry type="module" module-name="Task8_BST" />
+  </component>
+</module>
