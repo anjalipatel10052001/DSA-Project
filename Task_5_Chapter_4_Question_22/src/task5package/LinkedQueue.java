@@ -116,8 +116,7 @@ public class LinkedQueue<T> implements QueueInterface<T>
 
     else {
 
-      // This is the while loop beginning. ChatGPT
-      // helped me with the while loop statements.
+      // This is the while loop beginning. 
 
       while (numElementsCopy != 0 && frontCopy != null) {
 
@@ -192,8 +191,7 @@ public class LinkedQueue<T> implements QueueInterface<T>
   }
   // This is the swapStart method which returns true if the
   // first two elements in the queue are properly swapped.
-  // Otherwise, it returns false. ChatGPT helped me with
-  // this method.
+  // Otherwise, it returns false. 
 
   public boolean swapStart() {
 
