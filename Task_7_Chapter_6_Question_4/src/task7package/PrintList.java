@@ -35,9 +35,6 @@ public class PrintList {
 
     public void printList () {
 
-        // ChatGPT helped me with this entire
-        // main method.
-
         // This is the initiation and definition
         // of the scanner object.
 
