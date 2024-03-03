@@ -1,4 +1,4 @@
-package task4package;//Source citation from ChatGPT for recursive and iterative boolean methods
+package task4package;
 import java.util.Scanner;
 
 public class PalindromeChecker {
